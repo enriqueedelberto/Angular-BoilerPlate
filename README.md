@@ -1,4 +1,5 @@
 # Angular BoilerPlate
+[![Build Status](https://dev.azure.com/enriqueedelberto/Angular_BoilerPlate/_apis/build/status/enriqueedelberto.Angular-BoilerPlate?branchName=main)](https://dev.azure.com/enriqueedelberto/Angular_BoilerPlate/_build/latest?definitionId=1&branchName=main)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
 
