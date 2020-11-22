@@ -7,12 +7,14 @@
 <mat-sidenav-container fxLayout="row">
     <mat-sidenav fxFlex="20" mode="side" opened>
         <mat-nav-list>
-            <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a>
+            <a mat-list-item (click)="redirectTo(nav.path)" *ngFor="let nav of fillerNav">
+                <mat-icon aria-hidden="false" aria-label="Example home icon">{{nav.icon}}</mat-icon>
+                {{nav.title}}</a>
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content fxFlex>
         <div class="main-container">
-            Content of something
+            <router-outlet></router-outlet>
         </div>
 
     </mat-sidenav-content>

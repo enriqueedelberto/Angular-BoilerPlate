@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NavItem } from '../../models/NavItem';
 
 @Component({
   selector: 'app-home',
@@ -7,10 +8,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  fillerNav = Array.from({length: 5}, (_, i) => `Nav Item ${i + 1}`);
+  fillerNav: Array<NavItem> = [];
+
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.fillerNav = [
+      {
+        title: 'CRUD',
+        icon: 'home',
+        path: '/crud'
+      }
+    ];
   }
 
   redirectTo(path: string) {
