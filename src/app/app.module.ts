@@ -6,12 +6,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialComponentsImportsModule} from './material-components-imports/material-components-imports.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home/home.component';
+import { CrudComponent } from './components/crud/crud.component';
+import { CrudDetailComponent } from './components/crud/crud-detail/crud-detail.component';
+import { CrudListComponent } from './components/crud/crud-list/crud-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    CrudComponent,
+    CrudDetailComponent,
+    CrudListComponent
   ],
   imports: [
     BrowserModule,
